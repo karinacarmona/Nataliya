@@ -1,4 +1,14 @@
 Rails.application.routes.draw do
+  resources :success_stories
+
+  resources :videos
+
+  resources :work_experiences
+
+  resources :educations
+
+  resources :volunteers
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

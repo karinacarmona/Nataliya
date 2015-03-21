@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Success Stories</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @success_stories.each do |success_story| %>
+      <tr>
+        <td><%= link_to 'Show', success_story %></td>
+        <td><%= link_to 'Edit', edit_success_story_path(success_story) %></td>
+        <td><%= link_to 'Destroy', success_story, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Success story', new_success_story_path %>
