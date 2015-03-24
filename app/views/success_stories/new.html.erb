@@ -1,5 +1,29 @@
 <h1>New Success Story</h1>
 
-<%= render 'form' %>
+<%= form_for :success_story, url: success_stories_path do |f| %>
+  <p>
+    <%= f.label :photo_url %><br>
+    <%= f.text_field :photo_url %>
+  </p>
+
+  <p>
+    <%= f.label :title %><br>
+    <%= f.text_area :title %>
+  </p>
+
+    <p>
+    <%= f.label :date %><br>
+    <%= f.text_area :date %>
+  </p>
+
+    <p>
+    <%= f.label :description %><br>
+    <%= f.text_area :description %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
 
 <%= link_to 'Back', success_stories_path %>

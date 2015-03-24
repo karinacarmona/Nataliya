@@ -7,6 +7,10 @@ class SuccessStoriesController < ApplicationController
     @success_stories = SuccessStory.all
   end
 
+  def admin
+    @success_stories = SuccessStory.all
+  end
+
   # GET /success_stories/1
   # GET /success_stories/1.json
   def show
@@ -69,6 +73,6 @@ class SuccessStoriesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def success_story_params
-      params[:success_story]
+      params.require(:success_story).permit(:photo_url, :title, :description, :date)
     end
 end

@@ -1,4 +1,22 @@
 <p id="notice"><%= notice %></p>
 
+<p>
+  <img src= <%= @success_story.photo_url %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @success_story.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @success_story.description %>
+</p>
+
+<p>
+  Date:
+  <%=@success_story.date %>
+
 <%= link_to 'Edit', edit_success_story_path(@success_story) %> |
 <%= link_to 'Back', success_stories_path %>
