@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   devise_for :admins
+
   resources :success_stories
 
   resources :videos
@@ -17,7 +18,7 @@ get '/about', :to => 'pages#about'
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-       root to: "pages#home"  # Example of regular route:
+root to: "pages#home"  # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
   # Example of named route that can be invoked with purchase_url(id: product.id)

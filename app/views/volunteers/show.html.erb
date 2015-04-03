@@ -1,4 +1,107 @@
 <p id="notice"><%= notice %></p>
 
+<h1><%=@volunteer.first_name%> <%=@volunteer.last_name%></h1>
+<table>
+  <tr>
+    <td>
+      Name
+    </td>
+    <td>
+      <%=@volunteer.first_name%> <%=@volunteer.last_name%>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Address
+    </td>
+    <td>
+      <%=@volunteer.address%><br> <%=@volunteer.city%>, <%=@volunteer.state%> <%=@volunteer.postal_code%>, <%=@volunteer.country%>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Telephone
+    </td>
+    <td>
+      <%=@volunteer.telephone%>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Mobile Phone
+    </td>
+    <td>
+      <%=@volunteer.mobile%>
+    </td>
+  </tr>
+ <tr>
+    <td>
+      Email
+    </td>
+    <td>
+      <%=@volunteer.email%>
+    </td>
+  </tr>
+ <tr>
+    <td>
+      Birthday
+    </td>
+    <td>
+      <%=@volunteer.birthday%>
+    </td>
+  </tr>
+   <tr>
+    <td>
+      What position?
+    </td>
+    <td>
+      <%=@volunteer.position_question%>
+    </td>
+  </tr>
+   <tr>
+    <td>
+      Emergency Contact
+    </td>
+    <td>
+      <%=@volunteer.ec_name%>
+    </td>
+    <td>
+      <%=@volunteer.ec_telephone%>
+    </td>
+  </tr>
+   <tr>
+    <td>
+      Availbility
+    </td>
+    <td>
+<!-- Add Availability thing -->
+    </td>
+  </tr>
+   <tr>
+    <td>
+      Why they are interested?
+    </td>
+    <td>
+      <%=@volunteer.why_interested%>
+    </td>
+  </tr> <tr>
+    <td>
+      What skills do they have?
+    </td>
+    <td>
+      <%=@volunteer.skills%>
+    </td>
+  </tr>
+   <tr>
+    <td>
+      Any convictions?
+    </td>
+    <td>
+      <%=@volunteer.convictions%>
+    </td>
+  </tr>
+</table>
+
+
 <%= link_to 'Edit', edit_volunteer_path(@volunteer) %> |
 <%= link_to 'Back', volunteers_path %>

@@ -1,0 +1,64 @@
+/*
+Error: File to import not found or unreadable: foundation/functions.
+       Load paths:
+         
+        on line 59 of app/assets/stylesheets/foundation_and_overrides.scss
+
+54: // This is the default html and body font-size for the base rem value.
+55: // $rem-base: 16px;
+56: 
+57: // Allows the use of rem-calc() or lower-bound() in your settings
+58: 
+59: @import "foundation/functions";
+60: 
+61: // The default font-size is set to 100% of the browser style sheet (usually 16px)
+62: // for compatibility with browser-based text zoom or user-set defaults.
+63: 
+64: // Since the typical default browser font-size is 16px, that makes the calculation for grid size.
+
+Backtrace:
+app/assets/stylesheets/foundation_and_overrides.scss:59
+/Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/sass-3.4.13/lib/sass/tree/import_node.rb:66:in `rescue in import'
+/Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/sass-3.4.13/lib/sass/tree/import_node.rb:45:in `import'
+/Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/sass-3.4.13/lib/sass/tree/import_node.rb:28:in `imported_file'
+/Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/sass-3.4.13/lib/sass/tree/import_node.rb:37:in `css_import?'
+/Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:311:in `visit_import'
+/Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/sass-3.4.13/lib/sass/stack.rb:79:in `block in with_base'
+/Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
+/Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
+/Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/sass-3.4.13/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/sass-3.4.13/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/sass-3.4.13/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+/Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/sass-3.4.13/lib/sass/engine.rb:285:in `render_with_sourcemap'
+/Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
+/Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:293:in `watch'
+/Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/sass-3.4.13/lib/sass/plugin.rb:108:in `method_missing'
+/Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/sass-3.4.13/lib/sass/exec/sass_scss.rb:381:in `watch_or_update'
+/Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/sass-3.4.13/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/sass-3.4.13/lib/sass/exec/base.rb:52:in `parse'
+/Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/sass-3.4.13/lib/sass/exec/base.rb:19:in `parse!'
+/Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/sass-3.4.13/bin/sass:13:in `<top (required)>'
+/Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/bin/sass:23:in `load'
+/Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: foundation/functions.\A        Load paths:\A          \A         on line 59 of app/assets/stylesheets/foundation_and_overrides.scss\A \A 54: // This is the default html and body font-size for the base rem value.\A 55: // $rem-base: 16px;\A 56: \A 57: // Allows the use of rem-calc() or lower-bound() in your settings\A 58: \A 59: @import \"foundation/functions\";\A 60: \A 61: // The default font-size is set to 100% of the browser style sheet (usually 16px)\A 62: // for compatibility with browser-based text zoom or user-set defaults.\A 63: \A 64: // Since the typical default browser font-size is 16px, that makes the calculation for grid size."; }

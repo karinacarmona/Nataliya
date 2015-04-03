@@ -1,10 +1,90 @@
 <div id="user_nav">
-    <% if user_signed_in? %>
-        Signed in as <%= current_user.email %>. This cannot be cheese?
-        <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
+    <% if admin_signed_in? %>
+        Signed in as <%= current_admin.email %>.
+
+        <%= link_to "Sign out", destroy_admin_session_path, :method => :delete %>
     <% else %>
-        <%= link_to 'Register', new_user_registration_path %> or <%= link_to 'Sign in', new_user_session_path %>
+        <%= link_to 'Register', new_admin_registration_path %> or <%= link_to 'Sign in', new_admin_session_path %>
     <% end %>
 </div>
+
+<ul class="example-orbit" data-orbit>
+  <li>
+    <div class="slider-div">
+    <img class= "slider-img" src="http://static01.nyt.com/images/2014/09/03/world/europe/20140903-REFUGEES-slide-2JEI/20140903-REFUGEES-slide-2JEI-jumbo.jpg" alt="slide 1" />
+    <div class="orbit-caption">
+      Caption One.
+    </div>
+  </div>
+  </li>
+  <li class="active">
+    <div class="slider-div">
+    <img class= "slider-img" src="http://www.straitstimes.com/sites/straitstimes.com/files/20140723/32209211e.jpg" alt="slide 2" />
+    <div class="orbit-caption">
+      Caption Two.
+    </div>
+  </li>
+</div>
+  <li>
+    <div class="slider-div">
+    <img class= "slider-img" src="http://www.themoscowtimes.com/upload/iblock/578/Ukraine_Refugees_Dumont1414.jpg" alt="slide 3" />
+    <div class="orbit-caption">
+      Caption Three.
+    </div>
+  </li>
+</div>
+</ul>
+
+<div class="fixed">
+  <nav class="top-bar" data-topbar role="navigation">
+   <ul class="title-area">
+    <li class="name">
+      <h1><a href="#">Nataliya Foundation</a></h1>
+    </li>
+  </nav>
+</div>
+
+<div class="row" data-equalizer>
+      <div class="medium-6 large-4 columns" data-equalizer-watch>
+        <article class="article-card">
+          <img src="http://i.onionstatic.com/avclub/5199/85/16x9/960.jpg">
+          <div class="card-content">
+            <p class="post-author">By <a href="#">Vincent Vega</a></p>
+            <h4>Pulp Fiction brought guns, gimps, and glory to the Cannes Film Festival</h4>
+            <p>If my answers frighten you then you should cease asking scary questions. Zed's dead, baby. Zed's dead. I love you, Pumpkin. I love you, Honey Bunny. All right, everybody be cool, this is a robbery!</p>
+            <p>
+              <a href="#">Read on...</a>
+            </p>
+          </div>
+        </article>
+      </div>
+      <div class="medium-6 large-4 columns" data-equalizer-watch>
+        <article class="article-card">
+          <img src="http://www.sonymoviechannel.com/sites/default/files/movies/images/syn__0055_snatch.jpg?1284493346">
+          <div class="card-content">
+            <p class="post-author">By <a href="#">Brick Top</a></p>
+            <h4>Santch. The best gangster movie of all time? I'll fight ya for it.</h4>
+            <p>It's behind you Tyrone. Whenever you reverse, things come from behind you. Who took the jam outta your doughnut? Yes, London. You know: fish, chips, cup 'o tea, bad food, worse weather, Mary f-king Poppins... LONDON.</p>
+            <p>
+              <a href="#">Read on...</a>
+            </p>
+          </div>
+        </article>
+      </div>
+      <div class="medium-6 large-4 end columns" data-equalizer-watch>
+        <article class="article-card">
+          <img src="http://imageserver.moviepilot.com/14709_fight_club-these-12-facts-prove-that-fight-club-is-one-of-the-best-films-ever-made.webp?width=960&height=600">
+          <div class="card-content">
+            <p class="post-author">By <a href="#">Tyler Durden</a></p>
+            <h4>It's said that the first rule of Fight Club is: 'You do not talk about Fight club.' We must ignore this rule for two reasons:</h4>
+            <p>You are not special. You are not a beautiful or unique snowflake. You're the same decaying organic matter as everything else.</p>
+            <p>
+              <a href="http://cultrbox.com/2014/01/13/fight-club-falling-down-and-the-anti-corporate-anti-hero/">Read on...</a>
+
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
 
 or not?

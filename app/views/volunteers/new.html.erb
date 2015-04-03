@@ -1,5 +1,145 @@
 <h1>New Volunteer</h1>
 
-<%= render 'form' %>
+<%= form_for :volunteer, url: volunteers_path do |f| %>
+  <p>
+    <%= f.label :first_name %><br>
+    <%= f.text_field :first_name %>
+
+    <%= f.label :last_name %><br>
+    <%= f.text_area :last_name %>
+  </p>
+
+    <p>
+    <%= f.label :address %><br>
+    <%= f.text_area :address %>
+  </p>
+
+    <p>
+    <%= f.label :city %><br>
+    <%= f.text_area :city %>
+  </p>
+
+  <p>
+    <%= f.label :state %><br>
+    <%= f.text_area :state %>
+  </p>
+
+  <p>
+    <%= f.label :postal_code %><br>
+    <%= f.text_area :postal_code %>
+  </p>
+
+  <p>
+    <%= f.label :country %><br>
+    <%= f.text_area :country %>
+  </p>
+
+  <p>
+    <%= f.label :telephone %><br>
+    <%= f.text_area :telephone %>
+  </p>
+
+  <p>
+    <%= f.label :mobile %><br>
+    <%= f.text_area :mobile %>
+  </p>
+
+  <p>
+    <%= f.label :email %><br>
+    <%= f.text_area :email %>
+  </p>
+
+  <p>
+    <%= f.label :birthday %><br>
+    <%= f.text_area :birthday %>
+  </p>
+
+  <p>
+    <%= f.label :position_question %><br>
+    <%= f.text_area :position_question %>
+  </p>
+
+  <p>
+    <%= f.label :ec_name %><br>
+    <%= f.text_area :ec_name %>
+  </p>
+
+  <p>
+    <%= f.label :ec_telephone %><br>
+    <%= f.text_area :ec_telephone %>
+  </p>
+
+  <table>
+    <tr>
+      <td>
+        <%= check_box_tag(:mon_am) %>
+        <%= label_tag(:mon_am, "Monday AM") %>
+      </td>
+      <td>
+        <%= check_box_tag(:mon_pm) %>
+        <%= label_tag(:mon_pm, "Monday PM") %>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <%= check_box_tag(:tues_am) %>
+        <%= label_tag(:tues_am, "Tuesday AM") %>
+      </td>
+      <td>
+        <%= check_box_tag(:tues_pm) %>
+        <%= label_tag(:tues_pm, "Tuesday PM") %>
+      </td>
+    </tr>
+      <tr>
+      <td>
+        <%= check_box_tag(:wed_am) %>
+        <%= label_tag(:wed_am, "Wednesday AM") %>
+      </td>
+      <td>
+        <%= check_box_tag(:wed_pm) %>
+        <%= label_tag(:wed_pm, "Wednesday PM") %>
+      </td>
+    </tr>
+      <tr>
+      <td>
+        <%= check_box_tag(:thurs_am) %>
+        <%= label_tag(:thurs_am, "Thursday AM") %>
+      </td>
+      <td>
+        <%= check_box_tag(:thurs_pm) %>
+        <%= label_tag(:thurs_pm, "Thursday PM") %>
+      </td>
+    </tr>
+      <tr>
+      <td>
+        <%= check_box_tag(:fri_am) %>
+        <%= label_tag(:fri_am, "Friday AM") %>
+      </td>
+      <td>
+        <%= check_box_tag(:fri_pm) %>
+        <%= label_tag(:fri_pm, "Friday PM") %>
+      </td>
+    </tr>
+
+  </table>
+
+  <p>
+    <%= f.label :hours_available %><br>
+    <%= f.text_area :hours_available %>
+       <%= check_box_tag(:day_or_week_available) %>
+        <%= label_tag(:day_or_week_available, "per week?") %>
+  </p>
+
+  <%= text_area_tag(:message, "Why are you interested?", size: "24x6") %>
+  <br>
+  <%= text_area_tag(:message, "What skilss do you have?", size: "24x6") %>
+  <br>
+  <%= text_area_tag(:message, "Do you have any convictions? If so, please explain.", size: "24x6") %>
+  <br>
+
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
 
 <%= link_to 'Back', volunteers_path %>
