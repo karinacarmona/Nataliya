@@ -1,0 +1,75 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *= require foundation_and_overrides
+ */
+
+.article-card {
+	border: 1px solid #d7d7d7;
+	margin-bottom: 1.5rem;
+	box-shadow: 2px 4px 5px 0px #d7d7d7;
+	.card-content {
+		background: #fff;
+		margin: 1.25rem;
+		.post-author {
+			text-align: center;
+		}
+		h4 {
+			color: #CF000F;
+		}
+		p {
+			color: #ff0000;
+		}
+		a i {
+			font-weight: 300;
+			color: #865332;
+			margin: 0 .5rem;
+			padding: 5px 7px 5px 7px;
+			border: 1px solid #757D75;
+			border-radius: 50%;
+		}
+		img.post-icon {
+			position: absolute;
+			width: 3rem;
+			border-radius: 50%;
+			margin-top: -3rem;
+		}
+	}
+}
+
+
+.top-bar {
+	background-color: #FFFFFFF;
+}
+
+a:hover {
+	background-color: #FFFFFF;
+}
+
+.slider-img {
+	width: 100%;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.orbit-container{
+	height: 80%;
+	overflow: hidden;
+}
+
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
