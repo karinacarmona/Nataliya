@@ -48,6 +48,18 @@
 	}
 }
 
+.logo{
+	margin-left:1em;
+}
+
+#orbit-row {
+	margin-left: 0;
+	margin-right: 0;
+	margin-bottom:3.5em;
+	width:100%;
+	max-width: none;
+}
+
 
 .top-bar {
 	background-color: #FFFFFFF;
@@ -72,4 +84,8 @@ a:hover {
     display: inline-block;
     height: 100%;
     vertical-align: middle;
+}
+
+.sub-nav dd{
+	float: right;
 }

@@ -1,43 +1,46 @@
-<div id="user_nav">
-    <% if admin_signed_in? %>
-        Signed in as <%= current_admin.email %>.
 
-        <%= link_to "Sign out", destroy_admin_session_path, :method => :delete %>
-    <% else %>
-        <%= link_to 'Register', new_admin_registration_path %> or <%= link_to 'Sign in', new_admin_session_path %>
-    <% end %>
-</div>
 
 
 <div class="fixed">
   <nav class="top-bar" data-topbar role="navigation">
    <ul class="title-area">
     <li class="name">
-      <h1><a href="#">Nataliya Foundation</a></h1>
+      <a href="#"><%=image_tag("logo copy.png", :class => "logo")%></a>
     </li>
+
   </nav>
+
+
+<dl class="sub-nav">
+  <dd><a href="#">Success Stories</a></dd>
+  <dd><a href="#">Volunteer</a></dd>
+  <dd><a href="#">About</a></dd>
+  <dd class="hide-for-small-only"><a href="#">Contact</a></dd>
+</dl>
 </div>
 
-<div class="orbit-container">
+
+<div class="row" id="orbit-row">
   <ul class="example-orbit" data-orbit>
     <li>
       <div class="slider-div">
-        <img class= "slider-img" src="http://static01.nyt.com/images/2014/09/03/world/europe/20140903-REFUGEES-slide-2JEI/20140903-REFUGEES-slide-2JEI-jumbo.jpg" alt="slide 1" />
+        <%=image_tag "slider1.jpg" %>
       </div>
     </li>
     <li class="active">
       <div class="slider-div">
-        <img class= "slider-img" src="http://i.huffpost.com/gen/1636072/images/o-UKRAINE-CRISIS-facebook.jpg" alt="slide 2" />
+      <%=image_tag "slider2.jpg" %>
       </div>
     </li>
     
     <li>
       <div class="slider-div">
-        <img class= "slider-img" src="https://d262ilb51hltx0.cloudfront.net/max/2000/1*kg_4Q6yHGkGh7o98LZJghg.jpeg" alt="slide 3" />
+         <%=image_tag "slider3.jpeg" %>
       </div>
     </li>
   </ul>
 </div>
+
 
 
 <div class="row" data-equalizer>
@@ -82,5 +85,17 @@
         </article>
       </div>
     </div>
+
+
+<div id="user_nav">
+    <% if admin_signed_in? %>
+        Signed in as <%= current_admin.email %>.
+
+        <%= link_to "Sign out", destroy_admin_session_path, :method => :delete %>
+    <% else %>
+        <%= link_to 'Register', new_admin_registration_path %> or <%= link_to 'Sign in', new_admin_session_path %>
+    <% end %>
+</div>
+
 
 or not?
