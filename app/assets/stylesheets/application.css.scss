@@ -29,7 +29,7 @@
 			color: #CF000F;
 		}
 		p {
-			color: #ff0000;
+			color: #865332;
 		}
 		a i {
 			font-weight: 300;
@@ -88,4 +88,20 @@ a:hover {
 
 .sub-nav dd{
 	float: right;
+}
+
+.fixed{
+	background-color: white;
+}
+
+.divider {
+	height:1px;
+	width:100%;
+	background-color: #865332;
+	margin-top: 1em;
+	margin-bottom: 2em;
+}
+
+.about-homepage{
+	font-size: 2em;
 }
