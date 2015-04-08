@@ -1,3 +1,21 @@
+<div class="fixed">
+  <nav class="top-bar" data-topbar role="navigation">
+   <ul class="title-area">
+    <li class="name">
+        <%= link_to "#{image_tag("logo copy.png", :class => "logo")}".html_safe, home_path%>
+    </li>
+
+  </nav>
+
+
+<dl class="sub-nav">
+  <dd><%=link_to 'Contact', contact_path%></dd>
+  <dd><%= link_to 'About', about_path%></dd>
+  <dd class="active"><%= link_to 'Volunteer', new_volunteer_path%></dd>
+  <dd class="hide-for-small-only"><%=link_to 'Success Stories',success_stories_path%></dd>
+</dl>
+</div>
+
 <h1>New Volunteer</h1>
 
 <%= form_for :volunteer, url: volunteers_path do |f| %>

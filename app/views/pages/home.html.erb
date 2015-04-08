@@ -5,17 +5,17 @@
   <nav class="top-bar" data-topbar role="navigation">
    <ul class="title-area">
     <li class="name">
-      <a href="#"><%=image_tag("logo copy.png", :class => "logo")%></a>
+      <%= link_to "#{image_tag("logo copy.png", :class => "logo")}".html_safe, home_path%>
     </li>
 
   </nav>
 
 
 <dl class="sub-nav">
-  <dd><a href="#">Contact</a></dd>
-  <dd><a href="#">About</a></dd>
-  <dd><a href="#">Volunteer</a></dd>
-  <dd class="hide-for-small-only"><a href="#">Success Stories</a></dd>
+  <dd><%=link_to 'Contact', contact_path%></dd>
+  <dd><%= link_to 'About', about_path%></dd>
+  <dd><%= link_to 'Volunteer', new_volunteer_path%></dd>
+  <dd class="hide-for-small-only"><%=link_to 'Success Stories',success_stories_path%></dd>
 </dl>
 </div>
 
@@ -41,50 +41,51 @@
   </ul>
 </div>
 <div class = "row">
-  <h! class="about-homepage">Nataliya Foundation is a
- network on the European continent. The united strength of its 49 members, present in 46 European countries, makes of Nataliya Foundation one of the major social actors in Europe. The network brings forward the needs of the people experiencing poverty and the voice of its member organisations to the European Institutions, European Union Member States, public authorities, and private stakeholders.</h!>
+  <h1 class="about-homepage">Nataliya Foundation is a
+ network on the European continent. The united strength of its 49 members, present in 46 European countries, makes of Nataliya Foundation one of the major social actors in Europe. The network brings forward the needs of the people experiencing poverty and the voice of its member organisations to the European Institutions, European Union Member States, public authorities, and private stakeholders.</h1>
 </div>
 
 
 <div class = "divider"></div>
 <div class="row" data-equalizer>
+
+      <h1 class = "about-homepage"> Read our Success Stories... </h1>
       <div class="medium-6 large-4 columns" data-equalizer-watch>
         <article class="article-card">
-          <img src="http://i.onionstatic.com/avclub/5199/85/16x9/960.jpg">
+          <%=image_tag @success_stories_sample[1].photo_url %>
           <div class="card-content">
-            <p class="post-author">By <a href="#">Vincent Vega</a></p>
-            <h4>Pulp Fiction brought guns, gimps, and glory to the Cannes Film Festival</h4>
-            <p>If my answers frighten you then you should cease asking scary questions. Zed's dead, baby. Zed's dead. I love you, Pumpkin. I love you, Honey Bunny. All right, everybody be cool, this is a robbery!</p>
+            <p class="post-author"> <%=@success_stories_sample[1].date%></p>
+            <h4><%=@success_stories_sample[1].title%></h4>
+            <p><%= truncate(@success_stories_sample[1].description, :length => 100) %></p>
             <p>
-              <a href="#">Read on...</a>
-            </p>
+              <%=link_to 'Read on..', @success_stories_sample[1]    %>   
+                   </p>
           </div>
         </article>
       </div>
       <div class="medium-6 large-4 columns" data-equalizer-watch>
-        <article class="article-card">
-          <img src="http://www.sonymoviechannel.com/sites/default/files/movies/images/syn__0055_snatch.jpg?1284493346">
+          <article class="article-card">
+          <%=image_tag @success_stories_sample[2].photo_url %>
           <div class="card-content">
-            <p class="post-author">By <a href="#">Brick Top</a></p>
-            <h4>Santch. The best gangster movie of all time? I'll fight ya for it.</h4>
-            <p>It's behind you Tyrone. Whenever you reverse, things come from behind you. Who took the jam outta your doughnut? Yes, London. You know: fish, chips, cup 'o tea, bad food, worse weather, Mary f-king Poppins... LONDON.</p>
+            <p class="post-author"> <%=@success_stories_sample[2].date%></p>
+            <h4><%=@success_stories_sample[2].title%></h4>
+            <p><%= truncate(@success_stories_sample[2].description, :length => 100) %></p>
             <p>
-              <a href="#">Read on...</a>
-            </p>
+              <%=link_to 'Read on..', @success_stories_sample[2]    %>   
+                   </p>
           </div>
         </article>
       </div>
       <div class="medium-6 large-4 end columns" data-equalizer-watch>
-        <article class="article-card">
-          <img src="http://imageserver.moviepilot.com/14709_fight_club-these-12-facts-prove-that-fight-club-is-one-of-the-best-films-ever-made.webp?width=960&height=600">
+            <article class="article-card">
+          <%=image_tag @success_stories_sample[0].photo_url %>
           <div class="card-content">
-            <p class="post-author">By <a href="#">Tyler Durden</a></p>
-            <h4>It's said that the first rule of Fight Club is: 'You do not talk about Fight club.' We must ignore this rule for two reasons:</h4>
-            <p>You are not special. You are not a beautiful or unique snowflake. You're the same decaying organic matter as everything else.</p>
+            <p class="post-author"> <%=@success_stories_sample[0].date%></p>
+            <h4><%=@success_stories_sample[0].title%></h4>
+            <p><%= truncate(@success_stories_sample[0].description, :length => 100) %></p>
             <p>
-              <a href="http://cultrbox.com/2014/01/13/fight-club-falling-down-and-the-anti-corporate-anti-hero/">Read on...</a>
-
-            </p>
+              <%=link_to 'Read on..', @success_stories_sample[0]    %>   
+                   </p>
           </div>
         </article>
       </div>
@@ -102,4 +103,3 @@
 </div>
 
 
-or not?
