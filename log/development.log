@@ -23296,3 +23296,637 @@ Started GET "/assets/slider2-21226deeed7f913106b1cd55d5a4fb53.jpg" for ::1 at 20
 
 
 Started GET "/assets/slider3-7bda3c1c754ff9f412cde82099f5bcfa.jpeg" for ::1 at 2015-04-04 19:56:40 -0700
+
+
+Started GET "/" for ::1 at 2015-04-07 21:20:43 -0700
+
+ActiveRecord::NoDatabaseError (FATAL:  database "db/development.postgresql" does not exist
+):
+  activerecord (4.2.0) lib/active_record/connection_adapters/postgresql_adapter.rb:661:in `rescue in connect'
+  activerecord (4.2.0) lib/active_record/connection_adapters/postgresql_adapter.rb:651:in `connect'
+  activerecord (4.2.0) lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+  activerecord (4.2.0) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `new'
+  activerecord (4.2.0) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:436:in `new_connection'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:446:in `checkout_new_connection'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /Users/karinacarmona/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /Users/karinacarmona/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:565:in `retrieve_connection'
+  activerecord (4.2.0) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.0) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.0) lib/active_record/migration.rb:384:in `connection'
+  activerecord (4.2.0) lib/active_record/migration.rb:371:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/tempfile_reaper.rb:15:in `call'
+  rack (1.6.0) lib/rack/lint.rb:49:in `_call'
+  rack (1.6.0) lib/rack/lint.rb:37:in `call'
+  rack (1.6.0) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.6.0) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.6.0) lib/rack/chunked.rb:54:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/karinacarmona/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/karinacarmona/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/karinacarmona/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.3ms)
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (58.3ms)
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (34.8ms)
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (120.2ms)
+
+
+Started GET "/" for ::1 at 2015-04-08 12:08:55 -0700
+
+ActiveRecord::NoDatabaseError (FATAL:  database "project_development" does not exist
+):
+  activerecord (4.2.0) lib/active_record/connection_adapters/postgresql_adapter.rb:661:in `rescue in connect'
+  activerecord (4.2.0) lib/active_record/connection_adapters/postgresql_adapter.rb:651:in `connect'
+  activerecord (4.2.0) lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+  activerecord (4.2.0) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `new'
+  activerecord (4.2.0) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:436:in `new_connection'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:446:in `checkout_new_connection'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /Users/karinacarmona/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /Users/karinacarmona/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:565:in `retrieve_connection'
+  activerecord (4.2.0) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.0) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.0) lib/active_record/migration.rb:384:in `connection'
+  activerecord (4.2.0) lib/active_record/migration.rb:371:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/tempfile_reaper.rb:15:in `call'
+  rack (1.6.0) lib/rack/lint.rb:49:in `_call'
+  rack (1.6.0) lib/rack/lint.rb:37:in `call'
+  rack (1.6.0) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.6.0) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.6.0) lib/rack/chunked.rb:54:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/karinacarmona/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/karinacarmona/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/karinacarmona/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.9ms)
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (46.0ms)
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (64.6ms)
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (135.5ms)
+
+
+Started GET "/" for ::1 at 2015-04-08 12:08:57 -0700
+
+ActiveRecord::NoDatabaseError (FATAL:  database "project_development" does not exist
+):
+  activerecord (4.2.0) lib/active_record/connection_adapters/postgresql_adapter.rb:661:in `rescue in connect'
+  activerecord (4.2.0) lib/active_record/connection_adapters/postgresql_adapter.rb:651:in `connect'
+  activerecord (4.2.0) lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+  activerecord (4.2.0) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `new'
+  activerecord (4.2.0) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:436:in `new_connection'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:446:in `checkout_new_connection'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /Users/karinacarmona/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /Users/karinacarmona/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:565:in `retrieve_connection'
+  activerecord (4.2.0) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.0) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.0) lib/active_record/migration.rb:384:in `connection'
+  activerecord (4.2.0) lib/active_record/migration.rb:371:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/tempfile_reaper.rb:15:in `call'
+  rack (1.6.0) lib/rack/lint.rb:49:in `_call'
+  rack (1.6.0) lib/rack/lint.rb:37:in `call'
+  rack (1.6.0) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.6.0) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.6.0) lib/rack/chunked.rb:54:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/karinacarmona/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/karinacarmona/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/karinacarmona/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (57.1ms)
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (77.6ms)
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (16.7ms)
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (35.2ms)
+
+
+Started GET "/" for ::1 at 2015-04-08 12:09:01 -0700
+
+ActiveRecord::NoDatabaseError (FATAL:  database "project_development" does not exist
+):
+  activerecord (4.2.0) lib/active_record/connection_adapters/postgresql_adapter.rb:661:in `rescue in connect'
+  activerecord (4.2.0) lib/active_record/connection_adapters/postgresql_adapter.rb:651:in `connect'
+  activerecord (4.2.0) lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+  activerecord (4.2.0) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `new'
+  activerecord (4.2.0) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:436:in `new_connection'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:446:in `checkout_new_connection'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /Users/karinacarmona/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /Users/karinacarmona/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:565:in `retrieve_connection'
+  activerecord (4.2.0) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.0) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.0) lib/active_record/migration.rb:384:in `connection'
+  activerecord (4.2.0) lib/active_record/migration.rb:371:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/tempfile_reaper.rb:15:in `call'
+  rack (1.6.0) lib/rack/lint.rb:49:in `_call'
+  rack (1.6.0) lib/rack/lint.rb:37:in `call'
+  rack (1.6.0) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.6.0) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.6.0) lib/rack/chunked.rb:54:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/karinacarmona/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/karinacarmona/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/karinacarmona/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.5ms)
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (21.6ms)
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (16.4ms)
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (37.2ms)
+  [1m[36m (46.4ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (2.8ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateVolunteers (20150321180102)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (9.0ms)[0m  [1mCREATE TABLE "volunteers" ("id" serial primary key, "first_name" character varying, "last_name" character varying, "address" character varying, "city" character varying, "state" character varying, "postal_code" character varying, "country" character varying, "telephone" character varying, "mobile" character varying, "email" character varying, "birthday" character varying, "position_question" text, "ec_name" character varying, "ec_telephone" character varying, "mon_am" boolean, "mon_pm" boolean, "tues_am" boolean, "tues_pm" boolean, "wed_am" boolean, "wed_pm" boolean, "thurs_am" boolean, "thurs_pm" boolean, "fri_am" boolean, "fri_pm" boolean, "hours_available" integer, "day_or_week_available" boolean, "why_interested" text, "skills" text, "convictions" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (15.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150321180102"]]
+  [1m[36m (0.9ms)[0m  [1mCOMMIT[0m
+Migrating to CreateEducations (20150321182621)
+  [1m[35m (14.8ms)[0m  BEGIN
+  [1m[36m (5.0ms)[0m  [1mCREATE TABLE "educations" ("id" serial primary key, "volunteers_id" integer, "dates" character varying, "qualification_courses" text, "place_of_education" text, "grade" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150321182621"]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+Migrating to CreateWorkExperiences (20150321183534)
+  [1m[35m (16.3ms)[0m  BEGIN
+  [1m[36m (21.2ms)[0m  [1mCREATE TABLE "work_experiences" ("id" serial primary key, "volunteers_id" integer, "dates" character varying, "employer" text, "job" text, "reason_for_leaving" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150321183534"]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+Migrating to CreateVideos (20150321183659)
+  [1m[35m (15.9ms)[0m  BEGIN
+  [1m[36m (18.9ms)[0m  [1mCREATE TABLE "videos" ("id" serial primary key, "title" character varying, "description" text, "embed_link" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150321183659"]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+Migrating to CreateSuccessStories (20150321183905)
+  [1m[35m (15.5ms)[0m  BEGIN
+  [1m[36m (4.7ms)[0m  [1mCREATE TABLE "success_stories" ("id" serial primary key, "photo_url" character varying, "date" character varying, "title" character varying, "description" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150321183905"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+Migrating to DeviseCreateAdmins (20150323224705)
+  [1m[35m (0.5ms)[0m  BEGIN
+DEPRECATION WARNING: `#timestamp` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in change at /Users/karinacarmona/Desktop/Nataliya/db/migrate/20150323224705_devise_create_admins.rb:34)
+  [1m[36m (4.0ms)[0m  [1mCREATE TABLE "admins" ("id" serial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" character varying, "last_sign_in_ip" character varying, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (0.9ms)[0m  CREATE UNIQUE INDEX  "index_admins_on_email" ON "admins"  ("email")
+  [1m[36m (1.0ms)[0m  [1mCREATE UNIQUE INDEX  "index_admins_on_reset_password_token" ON "admins"  ("reset_password_token")[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150323224705"]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (2.5ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'admins'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (1.9ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'educations'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (1.8ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'success_stories'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (1.9ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'videos'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (1.8ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'volunteers'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (1.8ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'work_experiences'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+
+
+Started GET "/" for ::1 at 2015-04-08 12:14:05 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  [1m[35mSuccessStory Load (0.7ms)[0m  SELECT "success_stories".* FROM "success_stories"
+  Rendered pages/home.html.erb within layouts/application (157.9ms)
+Completed 500 Internal Server Error in 233ms
+
+ActionView::Template::Error (undefined method `photo_url' for nil:NilClass):
+    52:       <h1 class = "about-homepage"> Read our Success Stories... </h1>
+    53:       <div class="medium-6 large-4 columns" data-equalizer-watch>
+    54:         <article class="article-card">
+    55:           <%=image_tag @success_stories_sample[1].photo_url %>
+    56:           <div class="card-content">
+    57:             <p class="post-author"> <%=@success_stories_sample[1].date%></p>
+    58:             <h4><%=@success_stories_sample[1].title%></h4>
+  app/views/pages/home.html.erb:55:in `_app_views_pages_home_html_erb___2661235932833251341_70155887296560'
+
+
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.9ms)
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (34.9ms)
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (21.1ms)
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (47.1ms)
+
+
+Started GET "/" for ::1 at 2015-04-08 12:15:56 -0700
+Processing by PagesController#home as HTML
+  [1m[36mSuccessStory Load (0.3ms)[0m  [1mSELECT "success_stories".* FROM "success_stories"[0m
+  Rendered pages/home.html.erb within layouts/application (41.1ms)
+Completed 500 Internal Server Error in 46ms
+
+ActionView::Template::Error (undefined local variable or method `success_stories_sample' for #<#<Class:0x007f9ce40befb8>:0x007f9ce30adb88>):
+    48: 
+    49: <div class = "divider"></div>
+    50: 
+    51: <%if success_stories_sample.length == 3 %>
+    52: <div class="row" data-equalizer>
+    53: 
+    54:       <h1 class = "about-homepage"> Read our Success Stories... </h1>
+  app/views/pages/home.html.erb:51:in `_app_views_pages_home_html_erb___2661235932833251341_70155900411960'
+
+
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.9ms)
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (32.4ms)
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (16.7ms)
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (35.6ms)
+
+
+Started GET "/" for ::1 at 2015-04-08 12:16:01 -0700
+Processing by PagesController#home as HTML
+  [1m[35mSuccessStory Load (0.2ms)[0m  SELECT "success_stories".* FROM "success_stories"
+  Rendered pages/home.html.erb within layouts/application (35.0ms)
+Completed 500 Internal Server Error in 39ms
+
+ActionView::Template::Error (undefined local variable or method `success_stories_sample' for #<#<Class:0x007f9ce40befb8>:0x007f9ce2f1ee48>):
+    48: 
+    49: <div class = "divider"></div>
+    50: 
+    51: <%if success_stories_sample.length == 3 %>
+    52: <div class="row" data-equalizer>
+    53: 
+    54:       <h1 class = "about-homepage"> Read our Success Stories... </h1>
+  app/views/pages/home.html.erb:51:in `_app_views_pages_home_html_erb___2661235932833251341_70155900411960'
+
+
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.3ms)
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (27.6ms)
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (22.3ms)
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/karinacarmona/.rvm/gems/ruby-2.0.0-p451/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (43.0ms)
+
+
+Started GET "/" for ::1 at 2015-04-08 12:16:45 -0700
+Processing by PagesController#home as HTML
+  [1m[36mSuccessStory Load (0.3ms)[0m  [1mSELECT "success_stories".* FROM "success_stories"[0m
+  Rendered pages/home.html.erb within layouts/application (80.6ms)
+Completed 200 OK in 7199ms (Views: 7197.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/foundation_and_overrides-7c91e7505dd0bd22b2c7bb3ead3b7fa4.css?body=1" for ::1 at 2015-04-08 12:16:52 -0700
+
+
+Started GET "/assets/scaffolds-5196631c3e17ad77ef65ec2f521a149e.css?body=1" for ::1 at 2015-04-08 12:16:53 -0700
+
+
+Started GET "/assets/educations-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-08 12:16:53 -0700
+
+
+Started GET "/assets/videos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-08 12:16:53 -0700
+
+
+Started GET "/assets/pages-923c5340c23a0dc31caeab618d891e00.css?body=1" for ::1 at 2015-04-08 12:16:53 -0700
+
+
+Started GET "/assets/success_stories-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-08 12:16:53 -0700
+
+
+Started GET "/assets/volunteers-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-08 12:16:53 -0700
+
+
+Started GET "/assets/work_experiences-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-08 12:16:53 -0700
+
+
+Started GET "/assets/application-0be920f6fdc747d799a9fdf684e80115.css?body=1" for ::1 at 2015-04-08 12:16:53 -0700
+
+
+Started GET "/assets/vendor/modernizr-ab036539ab2eac66b636accb8d06d77b.js?body=1" for ::1 at 2015-04-08 12:16:53 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-08 12:16:53 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-08 12:16:53 -0700
+
+
+Started GET "/assets/foundation/foundation-013a9ecfcbd0d277665f83c66e076e18.js?body=1" for ::1 at 2015-04-08 12:16:53 -0700
+
+
+Started GET "/assets/foundation/foundation.abide-cecd3b8dfdb9535c145e3160cca57cae.js?body=1" for ::1 at 2015-04-08 12:16:53 -0700
+
+
+Started GET "/assets/foundation/foundation.accordion-07d483c126d868809345e4abbcfd54a5.js?body=1" for ::1 at 2015-04-08 12:16:53 -0700
+
+
+Started GET "/assets/foundation/foundation.alert-e54c2d9000574a39e07b2e6ede6ae0f6.js?body=1" for ::1 at 2015-04-08 12:16:53 -0700
+
+
+Started GET "/assets/foundation/foundation.clearing-b0828edefaad3278cd85c2faf6fd20ef.js?body=1" for ::1 at 2015-04-08 12:16:53 -0700
+
+
+Started GET "/assets/foundation/foundation.dropdown-c6b22cf8e5474c59dc0bc19e2d290da5.js?body=1" for ::1 at 2015-04-08 12:16:53 -0700
+
+
+Started GET "/assets/foundation/foundation.interchange-adf4ca4cb9a1f36677701d7d06489ead.js?body=1" for ::1 at 2015-04-08 12:16:53 -0700
+
+
+Started GET "/assets/foundation/foundation.joyride-7f23c30298ef55f2db505f357bd4a799.js?body=1" for ::1 at 2015-04-08 12:16:53 -0700
+
+
+Started GET "/assets/foundation/foundation.offcanvas-0c2112e52f2de840e27058c4912dd869.js?body=1" for ::1 at 2015-04-08 12:16:53 -0700
+
+
+Started GET "/assets/foundation/foundation.magellan-8cd3c13f48f6d78fb172bb5200551918.js?body=1" for ::1 at 2015-04-08 12:16:53 -0700
+
+
+Started GET "/assets/foundation/foundation.orbit-925ec65dcf6be03dd5c7a1d472845b27.js?body=1" for ::1 at 2015-04-08 12:16:53 -0700
+
+
+Started GET "/assets/foundation/foundation.reveal-7bd8d9ca180151af16ff7678033f8212.js?body=1" for ::1 at 2015-04-08 12:16:53 -0700
+
+
+Started GET "/assets/foundation/foundation.slider-66a6fcccc01097ba84b9e9fb84a429ef.js?body=1" for ::1 at 2015-04-08 12:16:53 -0700
+
+
+Started GET "/assets/foundation/foundation.tab-0d9dd6504af28bc75bdb999fbb120872.js?body=1" for ::1 at 2015-04-08 12:16:53 -0700
+
+
+Started GET "/assets/foundation/foundation.tooltip-5214a0ecffb0be84dc9247c31455ef50.js?body=1" for ::1 at 2015-04-08 12:16:53 -0700
+
+
+Started GET "/assets/foundation/foundation.topbar-ba04adaaf787a047a2bc9195842bb938.js?body=1" for ::1 at 2015-04-08 12:16:53 -0700
+
+
+Started GET "/assets/foundation/foundation.equalizer-b93ba11c4146c58dd7d95ba14769e640.js?body=1" for ::1 at 2015-04-08 12:16:53 -0700
+
+
+Started GET "/assets/foundation-cf9c2be01a146b330f05b712f6779903.js?body=1" for ::1 at 2015-04-08 12:16:53 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-08 12:16:53 -0700
+
+
+Started GET "/assets/educations-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-08 12:16:53 -0700
+
+
+Started GET "/assets/success_stories-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-08 12:16:53 -0700
+
+
+Started GET "/assets/videos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-08 12:16:53 -0700
+
+
+Started GET "/assets/volunteers-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-08 12:16:53 -0700
+
+
+Started GET "/assets/work_experiences-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-08 12:16:53 -0700
+
+
+Started GET "/assets/application-9fff41777105dcfaef3d52b0cfb68e24.js?body=1" for ::1 at 2015-04-08 12:16:53 -0700
+
+
+Started GET "/assets/slider1-ba7df03d45ad3ed8fed3e4ea6d12953a.jpg" for ::1 at 2015-04-08 12:16:53 -0700
+
+
+Started GET "/assets/slider3-7bda3c1c754ff9f412cde82099f5bcfa.jpeg" for ::1 at 2015-04-08 12:16:53 -0700
+
+
+Started GET "/assets/slider2-21226deeed7f913106b1cd55d5a4fb53.jpg" for ::1 at 2015-04-08 12:16:53 -0700
