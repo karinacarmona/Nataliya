@@ -25,20 +25,21 @@
     <li>
       <div class="slider-div">
         <%=image_tag "orbit1.jpg" %>
-        <a href="#" id="first" class="button radius">Find out how you can help</a>
+        <%=link_to 'Find out how you can help', new_volunteer_path, :class=>"button radius", :id =>"first"%>
+        
       </div>
     </li>
     <li class="active">
       <div class="slider-div">
       <%=image_tag "orbit2.jpg" %>
-       <a href="#" id="second" class="button radius">Read our Success Stories</a>
+       <%=link_to 'Read our Success Stories', success_stories_path, :class=>"button radius", :id =>"second"%>
       </div>
     </li>
 
     <li>
       <div class="slider-div">
          <%=image_tag "orbit3.jpeg" %>
-          <a href="#" id="third" class="button radius">Learn about us</a>
+          <%=link_to 'Learn about us', about_path, :class=>"button radius", :id =>"third"%>
       </div>
     </li>
   </ul>

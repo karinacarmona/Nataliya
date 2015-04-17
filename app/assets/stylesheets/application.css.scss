@@ -19,7 +19,7 @@
 	border: 1px solid #d7d7d7;
 	margin-bottom: 1.5rem;
 	box-shadow: 2px 4px 5px 0px #d7d7d7;
-	height: 35rem;
+	height: 38rem;
 	.card-content {
 		background: #fff;
 		margin: 1.25rem;
@@ -66,9 +66,10 @@
 
 .button, .radius {
 	position: absolute;
-	
+	font-size:1em;
 	border-radius:0px;
 	border: 3px solid white;
+	border-color: white;
 	background-color: rgba(0,0,0,0);
 	color: white;
 }
@@ -78,8 +79,8 @@
 	color: white;
 }
 
-.button, .radius a:hover{
-	color: #6EC2E1;
+.button:hover, .radius:hover{
+	border-color: #6EC2E1;
 }
 
 #first {
@@ -94,7 +95,7 @@
 
 #third {
 	top:67%;
-	left:65%;
+	left:74%;
 }
 .top-bar {
 	background-color: #FFFFFFF;
