@@ -116,7 +116,7 @@ $jet         : #222222;
 $black       : #000000;
 
 // We use these as default colors throughout
-// $primary-color: #008CBA;
+$primary-color: #6ec2e1;
 // $secondary-color: #e7e7e7;
 // $alert-color: #f04124;
 // $success-color: #43AC6A;
@@ -1368,7 +1368,7 @@ $topbar-bg-color: $white;
 $topbar-bg: $topbar-bg-color;
 
 // Height and margin
-$topbar-height: rem-calc(60);
+$topbar-height: rem-calc(75);
 $topbar-margin-bottom: 0;
 
 // Controlling the styles for the title in the top bar

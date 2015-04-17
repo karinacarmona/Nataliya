@@ -16,4 +16,13 @@
 //= require turbolinks
 //= require_tree .
 
+window.addEventListener("beforeunload", function () {
+
+	  Foundation.libs.interchange.cached_images = undefined
+  Foundation.libs.interchange.cached_nodes = undefined
+  Foundation.libs.interchange.cache = {}
+  Foundation.libs.interchange.nodes_loaded = false
+  Foundation.libs.interchange.images_loaded = false
+});
+
 $(function(){ $(document).foundation(); });
