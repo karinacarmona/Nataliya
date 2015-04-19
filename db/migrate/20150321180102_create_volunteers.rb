@@ -11,7 +11,9 @@ class CreateVolunteers < ActiveRecord::Migration
       t.string :telephone
       t.string :mobile
       t.string :email
-      t.string :birthday
+      t.string :birthday_month
+      t.string :birthday_day
+      t.string :birthday_year
       t.text :position_question
       t.string :ec_name
       t.string :ec_telephone
@@ -26,7 +28,7 @@ class CreateVolunteers < ActiveRecord::Migration
       t.boolean :fri_am
       t.boolean :fri_pm
       t.integer :hours_available
-      t.boolean :day_or_week_available
+      t.string :day_or_week_available
       t.text :why_interested
       t.text :skills
       t.text :convictions
