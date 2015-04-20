@@ -20,161 +20,213 @@
 
 
 
-<%= form_for :volunteer, url: volunteers_path do |f| %>
-<fieldset>
-  <legend>New Volunteer Form</legend>
-   <div class ="row">
-    <div class= "small-5 columns">
-        <%= f.label :first_name %>
-        <%= f.text_field :first_name %>
-    </div>
-    <div class= "small-5 columns">
-        <%= f.label :last_name %>
-        <%= f.text_field :last_name %>
-    </div> 
-  </div>
-
-  <div class ="row">
-    <div class = "small-5 columns">
-      <%= f.label :address %>
-      <%= f.text_field :address %>
+  <%= form_for :volunteer, url: volunteers_path do |f| %>
+  <fieldset>
+    <legend>New Volunteer Form</legend>
+     <div class ="row">
+      <div class= "small-5 columns">
+          <%= f.label :first_name %>
+          <%= f.text_field :first_name %>
+      </div>
+      <div class= "small-5 columns">
+          <%= f.label :last_name %>
+          <%= f.text_field :last_name %>
+      </div>
     </div>
 
-    <div class = "small-3 columns">
-      <%= f.label :city %>
-      <%= f.text_field :city %>
+    <div class ="row">
+      <div class = "small-5 columns">
+        <%= f.label :address %>
+        <%= f.text_field :address %>
+      </div>
+
+      <div class = "small-3 columns">
+        <%= f.label :city %>
+        <%= f.text_field :city %>
+      </div>
+
+      <div class = "small-1 columns">
+        <%= f.label :state %>
+        <%= f.text_field :state %>
+      </div>
+
+      <div class = "small-3 columns">
+        <%= f.label :postal_code %>
+        <%= f.text_field :postal_code %>
+      </div>
+    </div>
+    <div class ="row">
+      <div class = "small-3 columns">
+        <%= f.label :country %>
+        <%= f.text_field :country %>
+      </div>
+
+      <div class = "small-3 columns">
+        <%= f.label :telephone %>
+        <%= f.text_field :telephone %>
+      </div>
+
+      <div class = "small-3 columns">
+        <%= f.label :mobile %>
+        <%= f.text_field :mobile %>
+      </div>
     </div>
 
-    <div class = "small-1 columns">
-      <%= f.label :state %>
-      <%= f.text_field :state %>
+    <div class = "row">
+      <div class = "small-5 columns">
+        <%= f.label :email %>
+        <%= f.text_field :email %>
+      </div>
+
+      <div class = "small-2 columns">
+        <label>Birthday Month</label>
+      <%=select_tag(:birthday_month, options_for_select([['Janurary','Janurary'],["February",'February'],['March',"March"],['April',"April"],['May',"May"],['June','June'],['July','July'],['August','August'],['September','September'],['October','October'],['November','November'],['December',"December"]]))%>
+      </div>
+
+      <div class = "small-1 columns">
+        <label>Day</label>
+        <%= select_tag(:birthday_day, options_for_select([['1','1'],['2','2'],['3','3'],['4','4'],['5','5'],['6','6'],['7','7'],['8','8'],['9','9'],['10','10'],['11','11'],['12','12'],['13','13'],['14','14'],['15','15'],['16','16'],['17','17'],['18','18'],['19','19'],['20','20'],['21','21'],['22','22'],['23','23'],['24','24'],['25','25'],['26','26'],['27','27'],['28','28'],['29','29'],['30','30'],['31','31']]))%>
+      </div>
+
+      <div class = "small-2 columns">
+        <label>Year</label>
+        <%=select_tag(:birthday_year, options_for_select([["1910", "1910"], ["1911", "1911"], ["1912", "1912"], ["1913", "1913"], ["1914", "1914"], ["1915", "1915"], ["1916", "1916"], ["1917", "1917"], ["1918", "1918"], ["1919", "1919"], ["1920", "1920"], ["1921", "1921"], ["1922", "1922"], ["1923", "1923"], ["1924", "1924"], ["1925", "1925"], ["1926", "1926"], ["1927", "1927"], ["1928", "1928"], ["1929", "1929"], ["1930", "1930"], ["1931", "1931"], ["1932", "1932"], ["1933", "1933"], ["1934", "1934"], ["1935", "1935"], ["1936", "1936"], ["1937", "1937"], ["1938", "1938"], ["1939", "1939"], ["1940", "1940"], ["1941", "1941"], ["1942", "1942"], ["1943", "1943"], ["1944", "1944"], ["1945", "1945"], ["1946", "1946"], ["1947", "1947"], ["1948", "1948"], ["1949", "1949"], ["1950", "1950"], ["1951", "1951"], ["1952", "1952"], ["1953", "1953"], ["1954", "1954"], ["1955", "1955"], ["1956", "1956"], ["1957", "1957"], ["1958", "1958"], ["1959", "1959"], ["1960", "1960"], ["1961", "1961"], ["1962", "1962"], ["1963", "1963"], ["1964", "1964"], ["1965", "1965"], ["1966", "1966"], ["1967", "1967"], ["1968", "1968"], ["1969", "1969"], ["1970", "1970"], ["1971", "1971"], ["1972", "1972"], ["1973", "1973"], ["1974", "1974"], ["1975", "1975"], ["1976", "1976"], ["1977", "1977"], ["1978", "1978"], ["1979", "1979"], ["1980", "1980"], ["1981", "1981"], ["1982", "1982"], ["1983", "1983"], ["1984", "1984"], ["1985", "1985"], ["1986", "1986"], ["1987", "1987"], ["1988", "1988"], ["1989", "1989"], ["1990", "1990"], ["1991", "1991"], ["1992", "1992"], ["1993", "1993"], ["1994", "1994"], ["1995", "1995"], ["1996", "1996"], ["1997", "1997"], ["1998", "1998"], ["1999", "1999"], ["2000", "2000"], ["2001", "2001"], ["2002", "2002"], ["2003", "2003"], ["2004", "2004"], ["2005", "2005"], ["2006", "2006"], ["2007", "2007"], ["2008", "2008"], ["2009", "2009"], ["2010", "2010"], ["2011", "2011"], ["2012", "2012"], ["2013", "2013"], ["2014", "2014"], ["2015", "2015"]]))%>
+      </div>
     </div>
 
-    <div class = "small-3 columns">
-      <%= f.label :postal_code %>
-      <%= f.text_field :postal_code %>
+    <div class = "row">
+          <div class = "small-5 columns">
+        <label>Emergency Contact Name</label>
+        <%= f.text_field :ec_name %>
+      </div>
+
+      <div class = "small-5 columns">
+        <label>Emergency Contact Telephone</label>
+        <%= f.text_field :ec_telephone %>
+      </div>
     </div>
-  </div>
-  <div class ="row">
-    <div class = "small-3 columns">
-      <%= f.label :country %>
-      <%= f.text_field :country %>
+    <br>s
+    <div class="small-6 large-centered columns">
+      <label> Please indicate the times your are available:</label>
+
+      <table>
+        <tr>
+          <td>
+            <%= check_box_tag(:mon_am) %>
+            <%= label_tag(:mon_am, "Monday AM") %>
+          </td>
+          <td>
+            <%= check_box_tag(:mon_pm) %>
+            <%= label_tag(:mon_pm, "Monday PM") %>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <%= check_box_tag(:tues_am) %>
+            <%= label_tag(:tues_am, "Tuesday AM") %>
+          </td>
+          <td>
+            <%= check_box_tag(:tues_pm) %>
+            <%= label_tag(:tues_pm, "Tuesday PM") %>
+          </td>
+        </tr>
+          <tr>
+          <td>
+            <%= check_box_tag(:wed_am) %>
+            <%= label_tag(:wed_am, "Wednesday AM") %>
+          </td>
+          <td>
+            <%= check_box_tag(:wed_pm) %>
+            <%= label_tag(:wed_pm, "Wednesday PM") %>
+          </td>
+        </tr>
+          <tr>
+          <td>
+            <%= check_box_tag(:thurs_am) %>
+            <%= label_tag(:thurs_am, "Thursday AM") %>
+          </td>
+          <td>
+            <%= check_box_tag(:thurs_pm) %>
+            <%= label_tag(:thurs_pm, "Thursday PM") %>
+          </td>
+        </tr>
+          <tr>
+          <td>
+            <%= check_box_tag(:fri_am) %>
+            <%= label_tag(:fri_am, "Friday AM") %>
+          </td>
+          <td>
+            <%= check_box_tag(:fri_pm) %>
+            <%= label_tag(:fri_pm, "Friday PM") %>
+          </td>
+        </tr>
+
+      </table>
     </div>
 
-    <div class = "small-3 columns">
-      <%= f.label :telephone %>
-      <%= f.text_field :telephone %>
+    <div class ="row">
+      <div class="small-5 large-centered columns">
+        <div class = "small-7 columns">
+          <%= f.label :hours_available %>
+          <%= f.text_field :hours_available %>
+        </div>
+        <div class = "small-5 columns">
+          <label>Choose one..</label>
+          <%=select_tag(:day_or_week_available, options_for_select([['per day','per day'],['per week','per week']]))%>
+        </div>
+      </div>
     </div>
 
-    <div class = "small-3 columns">
-      <%= f.label :mobile %>
-      <%= f.text_field :mobile %>
+      Education:
+        <%= f.fields_for :educations do |education_form| %>
+          <div class = "row">
+            <div class ="small-3 columns">
+              <label> Dates attended </label>
+              <%= education_form.text_field :dates %>
+            </div>
+            <div class= "small-6 columns">
+              <%= education_form.label :place_of_education %>
+              <%= education_form.text_field :place_of_education %>
+            </div>
+          </div>
+          <div class="row">
+               <%= education_form.label :qualification_courses %>
+              <%= education_form.text_area :qualification_courses %>
+          </div>
+        <% end %>
+
+
+    <div class="row">
+      <label>Which volunteer position would you like to be considered for?</label>
+      <%= f.text_area :position_question, :cols => "10", :rows => "8" %>
     </div>
-  </div>
 
-  <div class = "row">
-    <div class = "small-5 columns">
-      <%= f.label :email %>
-      <%= f.text_field :email %>
+    <div class="row">
+      <label>Please state why are you interested in volunteering in this role with the Nataliya Foundation.</label>
+      <%= f.text_area :position_question, :cols => "10", :rows => "8" %>
     </div>
 
-    <%=select_tag(:birthday_month, options_for_select([['Janurary','Janurary'],["February",'February'],['March',"March"],['April',"April"],['May',"May"]]))%>
+    <div class="row">
+      <label>Please list the key skills that you feel you have to offer Nataliya Foundation as a potential Intern volunteer.</label>
+      <%= f.text_area :position_question, :cols => "10", :rows => "8" %>
+    </div>
 
-  <p>
-    <%= f.label :birthday %><br>
-    <%= f.text_field :birthday %>
-  </p>
+    <div class="row">
+      <label>Do you have any convictions? If so, please explain.</label>
+      <%= f.text_area :position_question, :cols => "10", :rows => "8" %>
+    </div>
 
-  <p>
-    <%= f.label :position_question %><br>
-    <%= f.text_field :position_question %>
-  </p>
 
-  <p>
-    <%= f.label :ec_name %><br>
-    <%= f.text_area :ec_name %>
-  </p>
 
-  <p>
-    <%= f.label :ec_telephone %><br>
-    <%= f.text_area :ec_telephone %>
-  </p>
-
-  <table>
-    <tr>
-      <td>
-        <%= check_box_tag(:mon_am) %>
-        <%= label_tag(:mon_am, "Monday AM") %>
-      </td>
-      <td>
-        <%= check_box_tag(:mon_pm) %>
-        <%= label_tag(:mon_pm, "Monday PM") %>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <%= check_box_tag(:tues_am) %>
-        <%= label_tag(:tues_am, "Tuesday AM") %>
-      </td>
-      <td>
-        <%= check_box_tag(:tues_pm) %>
-        <%= label_tag(:tues_pm, "Tuesday PM") %>
-      </td>
-    </tr>
-      <tr>
-      <td>
-        <%= check_box_tag(:wed_am) %>
-        <%= label_tag(:wed_am, "Wednesday AM") %>
-      </td>
-      <td>
-        <%= check_box_tag(:wed_pm) %>
-        <%= label_tag(:wed_pm, "Wednesday PM") %>
-      </td>
-    </tr>
-      <tr>
-      <td>
-        <%= check_box_tag(:thurs_am) %>
-        <%= label_tag(:thurs_am, "Thursday AM") %>
-      </td>
-      <td>
-        <%= check_box_tag(:thurs_pm) %>
-        <%= label_tag(:thurs_pm, "Thursday PM") %>
-      </td>
-    </tr>
-      <tr>
-      <td>
-        <%= check_box_tag(:fri_am) %>
-        <%= label_tag(:fri_am, "Friday AM") %>
-      </td>
-      <td>
-        <%= check_box_tag(:fri_pm) %>
-        <%= label_tag(:fri_pm, "Friday PM") %>
-      </td>
-    </tr>
-
-  </table>
-
-  <p>
-    <%= f.label :hours_available %><br>
-    <%= f.text_area :hours_available %>
-       <%= check_box_tag(:day_or_week_available) %>
-        <%= label_tag(:day_or_week_available, "per week?") %>
-  </p>
-
-  <%= text_area_tag(:message, "Why are you interested?", size: "24x6") %>
-  <br>
-  <%= text_area_tag(:message, "What skills do you have?", size: "24x6") %>
-  <br>
-  <%= text_area_tag(:message, "Do you have any convictions? If so, please explain.", size: "24x6") %>
-  <br>
-
-  <p>
-    <%= f.submit %>
-  </p>
-</fieldset>
-<% end %>
+    <%= f.submit 'Submit', :class => 'button round' %>
+    <br>
+    <br>
+    </fieldset>
 
 </div>
+<% end %>
+
+
 
 <%= link_to 'Back', volunteers_path %>
 
