@@ -1,22 +1,48 @@
+
+<div class="fixed">
+  <nav class="top-bar" data-topbar role="navigation">
+   <ul class="title-area">
+    <li class="name">
+         <%= link_to "#{image_tag("logo copy.jpg", :class => "logo")}".html_safe, root_path, data: { no_turbolink: true }%>
+    </li>
+
+  </nav>
+
+
+	<dl class="sub-nav">
+	  <dd><%=link_to 'Contact', contact_path, data: { no_turbolink: true }%></dd>
+	  <dd><%= link_to 'About', about_path, data: { no_turbolink: true }%></dd>
+	  <dd><%= link_to 'Volunteer', new_volunteer_path, data: { no_turbolink: true }%></dd>
+	  <dd class="active"><%=link_to 'Success Stories',success_stories_path, data: { no_turbolink: true }%></dd>
+	</dl>
+</div>
+
+<div class= "article-container">
 <p id="notice"><%= notice %></p>
 
-<p>
-  <img src= <%= @success_story.photo_url %>
-</p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @success_story.title %>
-</p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @success_story.description %>
-</p>
 
-<p>
-  Date:
-  <%=@success_story.date %>
+<fieldset class="success-story-article">
+	
+	<!-- <div class = 'article-header'> -->
+		<h1 class= 'header'><%= @success_story.title %></h1><br>
+  		<%=image_tag("cal_icon.png")%>  <%=@success_story.date %>
+  		<br>
+  	<!-- </div> -->
+	  <img class = "article-image" src= <%= @success_story.photo_url %>>
 
-<%= link_to 'Edit', edit_success_story_path(@success_story) %> |
-<%= link_to 'Back', success_stories_path %>
+  	  
+
+	
+
+	<br><br>
+	<div class ="article-content">
+	<%= simple_format @success_story.description %>
+
+	<%= link_to 'Edit', edit_success_story_path(@success_story) %> |
+	<%= link_to 'Back', success_stories_path %>
+	</div>
+ </fieldset>
+
+</div>

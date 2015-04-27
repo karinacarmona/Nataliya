@@ -9,9 +9,9 @@
 
 
 <dl class="sub-nav">
-  <dd class= 'active'><%=link_to 'Contact', contact_path%></dd>
-  <dd><%= link_to 'About', about_path%></dd>
-  <dd><%= link_to 'Volunteer', new_volunteer_path%></dd>
-  <dd class="hide-for-small-only"><%=link_to 'Success Stories',success_stories_path%></dd>
+  <dd class = 'active'><%=link_to 'Contact', contact_path, data: { no_turbolink: true }%></dd>
+  <dd><%= link_to 'About', about_path, data: { no_turbolink: true }%></dd>
+  <dd><%= link_to 'Volunteer', new_volunteer_path, data: { no_turbolink: true }%></dd>
+  <dd class="hide-for-small-only"><%=link_to 'Success Stories',success_stories_path, data: { no_turbolink: true }%></dd>
 </dl>
 </div>

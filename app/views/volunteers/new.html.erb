@@ -9,16 +9,16 @@
 
 
 <dl class="sub-nav">
-  <dd><%=link_to 'Contact', contact_path%></dd>
-  <dd><%= link_to 'About', about_path%></dd>
-  <dd class="active"><%= link_to 'Volunteer', new_volunteer_path%></dd>
-  <dd class="hide-for-small-only"><%=link_to 'Success Stories',success_stories_path%></dd>
+  <dd><%=link_to 'Contact', contact_path, data: { no_turbolink: true }%></dd>
+  <dd><%= link_to 'About', about_path, data: { no_turbolink: true }%></dd>
+  <dd class="active"><%= link_to 'Volunteer', new_volunteer_path, data: { no_turbolink: true }%></dd>
+  <dd class="hide-for-small-only"><%=link_to 'Success Stories',success_stories_path, data: { no_turbolink: true }%></dd>
 </dl>
 </div>
 
 <div class = "content-container">
 
-
+  <p id="notice"><%= notice %></p>
 
   <%= form_for :volunteer, url: volunteers_path do |f| %>
   <fieldset>
@@ -105,7 +105,7 @@
         <%= f.text_field :ec_telephone %>
       </div>
     </div>
-    <br>s
+    <br>
     <div class="small-6 large-centered columns">
       <label> Please indicate the times your are available:</label>
 
@@ -176,7 +176,7 @@
         </div>
       </div>
     </div>
-
+<!-- 
       Education:
         <%= f.fields_for :educations do |education_form| %>
           <div class = "row">
@@ -193,7 +193,7 @@
                <%= education_form.label :qualification_courses %>
               <%= education_form.text_area :qualification_courses %>
           </div>
-        <% end %>
+        <% end %> -->
 
 
     <div class="row">

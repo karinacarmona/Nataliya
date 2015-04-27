@@ -17,7 +17,7 @@
 
 <h1>Editing Success Story</h1>
 
-<%= form_for :success_story, url: success_stories_path(@success_story), method: :path do |f| %>
+<%= form_for @success_story do |f| %>
   <p>
     <%= f.label :photo_url %><br>
     <%= f.text_field :photo_url %>
@@ -47,4 +47,4 @@
 <%end%>
 
 <%= link_to 'Show', @success_story %> |
-<%= link_to 'Back', success_stories_path %>
+<%= link_to 'Back', success_stories_path, data: {no_turbolink: true} %>

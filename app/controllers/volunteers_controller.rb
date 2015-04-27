@@ -15,7 +15,8 @@ class VolunteersController < ApplicationController
   # GET /volunteers/new
   def new
     @volunteer = Volunteer.new
-    @volunteer.education = Education.new
+  
+
   end
 
   # GET /volunteers/1/edit
@@ -29,7 +30,7 @@ class VolunteersController < ApplicationController
 
     respond_to do |format|
       if @volunteer.save
-        format.html { redirect_to @volunteer, notice: 'Volunteer was successfully created.' }
+        format.html { redirect_to new_volunteer_path, notice: 'Volunteer was successfully created.' }
         format.json { render :show, status: :created, location: @volunteer }
       else
         format.html { render :new }
