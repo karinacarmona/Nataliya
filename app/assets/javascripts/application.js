@@ -26,3 +26,20 @@ window.addEventListener("beforeunload", function () {
 });
 
 $(function(){ $(document).foundation(); });
+
+$(document).ready(function(){
+
+    $(".volunteer").click(function(){
+        $(".content-container").show();
+    });
+
+    $(".outside").click(function(){
+        $("#outside").show();
+    });
+
+    $(".within").click(function(){
+        $("#within").show();
+    });
+
+
+});

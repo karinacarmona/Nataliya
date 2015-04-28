@@ -21,12 +21,13 @@
     <div id="footer">
       <div class ="row about-row">
         <div class = "large-3 columns">
+          <strong>Navigate</strong><br>
           <%=link_to 'Read Our Success Stories',success_stories_path, class: "footer-link", data: { no_turbolink: true }%><br>
-      
+
           <%= link_to 'About', about_path, class: "footer-link", data: { no_turbolink: true }%><br>
           <%=link_to 'Contact', contact_path, class: "footer-link", data: { no_turbolink: true }%>
-         
-        </div>  
+
+        </div>
         <div class= "large-3 columns">
           <strong>How You Can Help</strong><br>
           <%= link_to 'Become a Volunteer', new_volunteer_path, class: "footer-link", data: { no_turbolink: true }%><br>
