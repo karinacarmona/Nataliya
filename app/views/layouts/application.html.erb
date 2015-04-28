@@ -17,5 +17,27 @@
 
     <%= yield %>
 
+
+    <div id="footer">
+      <div class ="row about-row">
+        <div class = "large-3 columns">
+          <%=link_to 'Read Our Success Stories',success_stories_path, class: "footer-link", data: { no_turbolink: true }%><br>
+      
+          <%= link_to 'About', about_path, class: "footer-link", data: { no_turbolink: true }%><br>
+          <%=link_to 'Contact', contact_path, class: "footer-link", data: { no_turbolink: true }%>
+         
+        </div>  
+        <div class= "large-3 columns">
+          <strong>How You Can Help</strong><br>
+          <%= link_to 'Become a Volunteer', new_volunteer_path, class: "footer-link", data: { no_turbolink: true }%><br>
+          <%= link_to 'Donate', new_volunteer_path, class: "footer-link", data: { no_turbolink: true }%><br>
+        </div>
+        <div class ="large-6 columns">
+          <%=image_tag("white-logo.png")%>
+        </div>
+      </div>
+    </div>
+
+  </div>
   </body>
 </html>

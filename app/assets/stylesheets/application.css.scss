@@ -240,11 +240,10 @@ margin: auto;
 .about-container {
 	width: 80%;
 	margin: auto;
+	font-size: 1rem;
+	line-height: 180%;
 }
 
-.about-container p {
-	font-size: 1.5rem;
-}
 
 .quote {
 	width:80%;
@@ -257,4 +256,85 @@ margin: auto;
 	font-size: 1rem;
 	color: #878585;
 	text-align:center;
+}
+.about-row{
+	margin:0;
+	max-width: none;
+}
+.about-box{
+	vertical-align: middle;
+	padding: 6rem 1rem;
+	line-height:180%;
+	text-align: center;
+	&:nth-child(1){
+		background-color: #9CACb2;
+		color:white;
+	}
+	&:nth-child(2){
+		background-color:#6DC2E1;
+		color:white;
+	}
+	&:nth-child(3){
+		background-color: #7BBCD3;
+		color:white;
+	}
+
+	&:hover{
+		font-size: 0.9rem;
+		vertical-align: middle;
+	}
+}
+
+.about-rect{
+	vertical-align:middle;
+	padding:4rem 1rem ;
+	line-height:180%;
+	text-align:center;
+	&:nth-child(1){
+		background-color: #bfe4f2;
+		color:white;
+	}
+	&:nth-child(2){
+		background-color:#9CACB2;
+		color:white;
+	}
+
+	&:hover{
+		font-size: 0.9rem;
+
+	}
+}
+
+.separation{
+	padding:3rem;
+	font-size:1rem;
+	text-align:center;
+	color:#6F6F6F;
+	line-height: 180%;
+}
+
+.row2{
+	text-align:center;
+
+}
+.comp-img{
+	display:inline-block;
+	margin: 3rem 2rem;
+}
+
+.link{
+	&:hover {
+		color:#6DC2E1; 
+	}
+}
+
+
+//footer
+#footer{
+	padding:2rem 2rem;
+	background-color: #bfbdbd;
+	img{
+		height:80px;
+		float: right;
+	}
 }
