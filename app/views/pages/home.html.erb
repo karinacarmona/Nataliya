@@ -45,8 +45,22 @@
   </ul>
 </div>
 <div class = "row">
-  <h1 class="about-homepage">Nataliya Foundation is a
- network on the European continent. The united strength of its 49 members, present in 46 European countries, makes of Nataliya Foundation one of the major social actors in Europe. The network brings forward the needs of the people experiencing poverty and the voice of its member organisations to the European Institutions, European Union Member States, public authorities, and private stakeholders.</h1>
+  <h1 class="about-homepage">As the situation in the Eastern parts of Ukraine is becoming a large-scale humanitarian crisis, Nataliya Foundation needs your support to maintain its 5 large-scale relief programmes across the country </h1>
+  <br>
+  <div class = "hold-points">
+    <div class ="home-row"><h1 class ="home-number">1</h1> <h2 class="five-branch">
+      Medico-social and material assistance to victims and families of the deceased during mass protests in Ukraine</h2></div>
+
+    <div class ="home-row"><h1 class ="home-number">2</h1> <h2 class="five-branch">Medical treatment and long-duration rehabilitation to wounded during EuroMaidan and in Eastern oblasts</h2></div>
+
+    <div class ="home-row"><h1 class ="home-number">3</h1> <h2 class="five-branch">Psychotherapeutic assistance to direct victims, familiy members and witnesses of mass protests in Ukraine</h2></div>
+
+    <div class ="home-row"><h1 class ="home-number">4</h1> <h2 class="five-branch">Care for internally displaced persons from Crimea and Eastern oblasts of Ukraine</h2>
+    </div>
+
+    <div class ="home-row"><h1 class ="home-number">5</h1> <h2 class="five-branch">Assistance to victims of humanitarian crisis in Eastern Ukraine</h2>
+    </div>
+  </div>
 </div>
 
 
@@ -64,7 +78,7 @@
             <h4><%=@success_stories_sample[1].title%></h4>
             <p><%= truncate(@success_stories_sample[1].description, :length => 100) %></p>
             <p>
-              <%=link_to 'Read on..', @success_stories_sample[1]    %>
+              <%=link_to 'Read on..', @success_stories_sample[1], data: { no_turbolink: true }    %>
                    </p>
           </div>
         </article>
@@ -77,7 +91,7 @@
             <h4><%=@success_stories_sample[2].title%></h4>
             <p><%= truncate(@success_stories_sample[2].description, :length => 100) %></p>
             <p>
-              <%=link_to 'Read on..', @success_stories_sample[2]    %>
+              <%=link_to 'Read on..', @success_stories_sample[2], data: { no_turbolink: true }    %>
                    </p>
           </div>
         </article>
@@ -90,7 +104,7 @@
             <h4><%=@success_stories_sample[0].title%></h4>
             <p><%= truncate(@success_stories_sample[0].description, :length => 100) %></p>
             <p>
-              <%=link_to 'Read on..', @success_stories_sample[0]    %>
+              <%=link_to 'Read on..', @success_stories_sample[0], data: { no_turbolink: true }    %>
                    </p>
           </div>
         </article>
